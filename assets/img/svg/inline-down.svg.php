@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="40" height="23" viewBox="0 0 40 23">
+  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAXBAMAAACL/BAmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMAAY9Cgpf2iMLMad0AAAABYktHRAH/Ai3eAAAACXBIWXMAAAsSAAALEgHS3X78AAAAcklEQVQY02XKsRGAIBBE0WVowIQKbMDAoQ8zcxNCmlCvbBlAYI8f/nkwK1Q74J6Nnw0Rp1w8vbxpMrUhTSdMvUiEYZohFM0QTCtkWiHRBkfa4EAH2OkAGyX4U4KVKliogoVqmKmGmcq9YKaHfonOMNEOPxAkOvp9jKgLAAAAAElFTkSuQmCC" width="40" height="23"/>
+</svg>
