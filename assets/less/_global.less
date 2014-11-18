@@ -1,3 +1,38 @@
+a {
+  color: @brand-secondary;
+  .secondary-color();
+}
+
+.primary-color {
+  .transition;
+  &:hover {
+    color: @brand-primary-dark;
+    text-decoration: none;
+  }
+}
+
+.secondary-color {
+  .transition;
+  &:hover {
+    color: @brand-secondary-dark;
+    text-decoration: none;
+  }
+}
+
+.primary-background {
+  .transition;
+  &:hover {
+    background: @brand-primary-dark;
+  }
+}
+
+.secondary-background {
+  .transition;
+  &:hover {
+    background: @brand-secondary-dark;
+  }
+}
+
 .transition(@transition: .5s) {
   -o-transition:@transition;
   -ms-transition:@transition;

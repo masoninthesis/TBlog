@@ -1,5 +1,5 @@
 /*----------------------
-  navbar (scroll-bar)
+  navbar (on scroll)
   ----------------------*/
 
 .navbar-fixed {
@@ -10,20 +10,41 @@
 }
 
 .body-top {
-  padding-top: 48px;
+  margin-bottom: 44px;
 }
 
-.form-right {
+.form-after {
   text-align: right !important;
-  .transition(5s);
+  .btn-sub {
+    background: @brand-primary !important;
+    border: 1px solid @brand-primary !important;
+    color: #fff !important;
+    .secondary-background();
+  }
 }
 
 /*----------------------
   navbar
   ----------------------*/
 
-#form-center {
-  text-align: center;
+#form-before {
+  text-align: right;
+  .btn-sub {
+    background: #fff;
+    border: 1px solid @gray-light-ish;
+    color: #000;
+    &:hover {
+      .transition(1s);
+      background: @brand-primary;
+      border: 1px solid @brand-primary;
+      color: #fff;
+    }
+  }
+}
+
+.form-control {
+  display: inline;
+  width: inherit;
 }
 
 nav {
@@ -44,4 +65,14 @@ nav ul li {
  display: inline-block;
  padding: 0 3em 0 3em;
  line-height: 3em;
+}
+
+/*----------------------
+  hero
+  ----------------------*/
+#hero {
+  background: @brand-primary;
+  h1, h2 {
+    color: #fff;
+  }
 }
