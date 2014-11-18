@@ -11,8 +11,15 @@
 
 <nav id="navbar">
   <ul id="form-before">
-    <li>
-      <form class="gk-form">
+    <li class="twitter">
+      <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </li>
+    <li class="facebook">
+      <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+    </li>
+    <li class="nav-sub">
+      <form>
         <div>
           <input class="form-control" type="email" placeholder="Email address ...">
           <input class="btn btn-sub" type="submit" value="Subscribe">
@@ -23,7 +30,7 @@
 </nav>
 
 <script type="text/javascript">
-
+  // Nav Bar
   (function($, undefined){
     "use strict";
 
@@ -50,3 +57,13 @@
   })(jQuery, undefined);
 
 </script>
+
+<!-- Facebook Embed -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
