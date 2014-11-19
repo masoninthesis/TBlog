@@ -27,7 +27,7 @@ a {
 }
 
 .secondary-background {
-  .transition;
+  .transition(1s);
   &:hover {
     background: @brand-secondary-dark;
   }
@@ -35,6 +35,17 @@ a {
 
 .half-rule {
   width: 250px;
+}
+
+.form-focus {
+  .transition;
+  &:focus {
+    background: #fffef4;
+    outline: 0;
+    border-color: @gray-light-ish;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 .transition(@transition: .5s) {

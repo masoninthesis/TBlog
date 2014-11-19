@@ -18,7 +18,6 @@
     background: @brand-primary !important;
     border: 1px solid @brand-primary !important;
     color: #fff !important;
-    .secondary-background();
   }
 }
 
@@ -40,6 +39,8 @@
 
 form {
   margin-top: 7px;
+  font-family: 'Avenir';
+  font-weight: 300;
 }
 
 #form-before {
@@ -47,9 +48,11 @@ form {
     background: #fff;
     border: 1px solid @gray-light-ish;
     color: @brand-primary;
-    margin-top: -2px;
+    padding-top: 7px;
+    line-height: 1.4;
+    margin-top: -1px;
     &:hover {
-      .transition(1s);
+      .transition;
       background: @brand-primary;
       border: 1px solid @brand-primary;
       color: #fff;
@@ -60,6 +63,7 @@ form {
 .form-control {
   display: inline;
   width: inherit;
+  .form-focus;
 }
 
 nav {
