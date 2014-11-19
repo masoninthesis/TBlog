@@ -2,10 +2,9 @@
   <div class="wrap container">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <p class="logo">Timely</p>
-        <h1>Subscribe and get timely blog posts</h1>
-        <h2>Follow for updates and new features.</h2>
-        <i class="info-icon"><?php get_template_part( 'assets/img/svg/inline', 'down.svg' ); ?></i>
+        <p class="logo">home..</p>
+        <h1>Be Timely.</h1>
+        <h2>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h2>
       </div>
     </div>
   </div>

@@ -41,3 +41,5 @@ foreach ($roots_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+set_post_thumbnail_size( 860, 9999, true ); // 860 pixels wide by 356 pixels tall, crop mode
