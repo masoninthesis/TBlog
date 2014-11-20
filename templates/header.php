@@ -2,32 +2,34 @@
   <div class="wrap container">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <p class="logo">home..</p>
+        <a href="http://timelyapp.com" target="_blank" class="btn btn-primary btn-sm">Home</a>
         <h1>Be Timely.</h1>
-        <h2>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h2>
+        <h3>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h3>
       </div>
     </div>
   </div>
 </section>
 
 <nav id="navbar">
-  <ul id="form-before">
-    <li class="twitter">
-      <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </li>
-    <li class="facebook">
-      <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-    </li>
-    <li class="nav-sub">
-      <form>
-        <div>
-          <input class="form-control" type="email" placeholder="Email address ...">
-          <input class="btn btn-sub" type="submit" value="Subscribe">
-        </div>
-      </form>
-    </li>
-  </ul>
+  <div class="nav-container">
+    <ul id="form-before">
+      <li class="twitter">
+        <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li class="facebook">
+        <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      </li>
+      <li class="nav-sub">
+        <form>
+          <div>
+            <input class="form-control" type="email" placeholder="Email address ...">
+            <input class="btn btn-sub" type="submit" value="Subscribe">
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 <script type="text/javascript">

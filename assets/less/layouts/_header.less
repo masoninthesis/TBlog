@@ -24,13 +24,10 @@
 /*----------------------
   navbar
   ----------------------*/
-
-.twitter {
-  margin: 14px 14px 0 0;
-}
-
-.facebook {
-  line-height: .8;
+.nav-container {
+  max-width: 948px;
+  margin: 0 auto;
+  display: block;
 }
 
 .nav-sub {
@@ -44,6 +41,13 @@ form {
 }
 
 #form-before {
+  .twitter {
+    margin: 14px 14px 0 4px;
+  }
+
+  .facebook {
+    line-height: .7;
+  }
   .btn-sub {
     background: #fff;
     border: 1px solid @gray-light-ish;
@@ -63,6 +67,8 @@ form {
 .form-control {
   display: inline;
   width: inherit;
+  border-radius: 6px;
+  font-style: italic;
   .form-focus;
 }
 
@@ -86,20 +92,22 @@ nav {
   hero
   ----------------------*/
 #hero {
-  background: @brand-primary;
+  background: @brand-primary-dark;
   margin-bottom: -10px; /* This is to compensate for some random empty space above the nav */
-  .logo {
+  .btn {
+    margin-top: 12px;
     float: left;
-    color: #fff;
+    color: @brand-primary-light;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid @brand-primary-light;
+    &:hover {
+      .transition;
+      color: @brand-primary-lighter;
+      border: 1px solid @brand-primary-lighter;
+    }
   }
   h1 {
     padding-top: 24px;
     color: #fff;
-    }
-  h2 {
-    color: #a3a4a6;
-    margin: 20px 120px 24px 120px;
-    line-height: 28px;
-    font-size: 20px;
   }
 }
