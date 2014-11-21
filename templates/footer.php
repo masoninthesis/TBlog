@@ -56,11 +56,20 @@
       <center><svg width="30" height="33" class="logo logo-modal"><?php get_template_part( 'assets/img/svg/inline', 'logo.svg' ); ?></center>
       <center><h3>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h3></center>
       <div class="modal-body">
-        <center>
+        <center class="modal-form">
           <form class="form-inline" id="before_header" action="//jackalope.us9.list-manage.com/subscribe/post?u=74a8ddb6f1ff4b3eeb5966632&amp;id=322fc5ebb8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Email address.." required>
             <button id="header-optin-click" name="submit" onClick="ga('send', 'event', 'optin', 'subscribe', 'header optin');" class="btn btn-sub" type="submit" value="Submit" tabindex="501">Subscribe</button>
           </form>
+          <ul class="social">
+            <li class="twitter">
+              <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li class="fb-phone">
+              <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            </li>
+          </ul>
         </center>
       </div><!-- /optin -->
     </div>
