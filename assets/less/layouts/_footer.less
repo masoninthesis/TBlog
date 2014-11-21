@@ -7,6 +7,7 @@
   display: inline-block;
   padding: 10px 10px 7px 10px;
   .email {
+    width: 100%;
     border: none!important;
     border-radius: 4px;
     box-sizing: border-box;
@@ -17,34 +18,64 @@
     height: 68px;
     padding: 0 30px;
     top: -3px;
-    width: 456px;
     .form-focus;
+    @media (min-width: @screen-sm-min) {
+      width: 406px;
+    }
   }
   .btn-sub {
-    background: @brand-primary-dark;
+    width: 100%;
+    background: @brand-secondary;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 18px;
     letter-spacing: 1px;
     height: 68px;
-    margin: -5px 0 0 10px;
+    margin: 10px 0 0 0;
     padding: 0 30px;
     &:hover {
       .transition;
-      background: @brand-primary;
+      background: @brand-secondary-dark;
+    }
+    @media (min-width: @screen-sm-min) {
+      width: inherit;
+      margin: -5px 0 0 10px;
     }
   }
 }
 
 #footer-optin .social li {
   display: inline-block;
-  line-height: 1.4;
-  padding: 24px 0 18px 0;
+  line-height: .8;
+  padding: 18px 0 0 0;
+  @media (min-width: @screen-sm-min) {
+    line-height: 1.4;
+  }
+  @media (min-width: @screen-md-min) {
+    padding: 24px 0 18px 0;
+  }
 }
 
 .social .twitter {
-  margin-right: 114px;
+  margin: 0 12px 0 -42px;
+  @media (min-width: @screen-sm-min) {
+    margin: 0 64px 0 0;
+  }
+}
+
+.fb-tablet {
+  display: none !important;
+  @media (min-width: @screen-sm-min) {
+    display: inline-block !important;
+  }
+}
+
+.fb-phone {
+  display: inline-block !important;
+  @media (min-width: @screen-sm-min) {
+    display: none !important;
+  }
 }
 
 // Footer
@@ -84,7 +115,7 @@
 }
 
 .footer .copyright {
-  border-top: 1px solid @brand-primary;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
   display: block;
   margin: 0 auto;

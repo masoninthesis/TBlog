@@ -26,8 +26,12 @@ article, article img {
 
 .entry-summary {
   p {
-    padding: 0 110px;
+    padding: 0 24px;
     text-align: left;
+    @media (min-width: @screen-sm-min) {
+      padding: 0 110px;
+      text-align: left;
+    }
   }
 }
 

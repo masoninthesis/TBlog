@@ -65,15 +65,22 @@ h1, h2, h3, h4, h5, h6, p, body {
 }
 
 p {
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.5;
+  @media (min-width: @screen-sm-min) {
+    font-size: 17px;
+    line-height: 1.6;
+  }
 }
 
 h3 {
-  color: @brand-primary-lighter;
-  margin: 20px 120px 24px 120px;
+  color: @brand-primary-light;
+  margin: 20px 0 24px 0;
   line-height: 28px;
   font-size: 20px;
+  @media (min-width: @screen-lg-min) {
+    margin: 20px 120px 24px 120px;
+  }
 }
 
 @font-face {
