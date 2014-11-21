@@ -75,11 +75,17 @@ p {
 
 h3 {
   color: @brand-primary-light;
-  margin: 20px 0 24px 0;
   line-height: 28px;
   font-size: 20px;
+  margin: 0 46px 36px 46px;
+  @media (min-width: @screen-sm-min) {
+    margin: 0 80px 36px 80px;
+  }
+  @media (min-width: @screen-md-min) {
+    margin: 0 180px 36px 180px;
+  }
   @media (min-width: @screen-lg-min) {
-    margin: 20px 120px 24px 120px;
+    margin: 0 260px 36px 260px;
   }
 }
 

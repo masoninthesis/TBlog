@@ -13,20 +13,23 @@
 <nav id="navbar">
   <div class="nav-container">
     <ul id="form-before">
-      <li class="twitter">
+      <li class="twitter nav-tablet">
         <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </li>
-      <li class="facebook">
+      <li class="facebook  nav-tablet">
         <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
       </li>
-      <li class="nav-sub">
+      <li class="nav-sub nav-tablet">
         <form>
           <div>
             <input class="form-control" type="email" placeholder="Email address ...">
             <input class="btn btn-sub" type="submit" value="Subscribe">
           </div>
         </form>
+      </li>
+      <li class="nav-mobile" >
+        <button class="btn btn-sub btn-sub-mobile" data-toggle="modal" data-target="#myModal" name="nav-sub-mobile">Subscribe</button>
       </li>
     </ul>
   </div>
@@ -40,6 +43,7 @@
     var $navbar = $("#navbar"),
         $body = $("#hero"),
         $form = $("#form-before"),
+        $mobile = $(".btn-sub-mobile"),
         y_pos = $navbar.offset().top,
         height = $navbar.height();
 
@@ -50,10 +54,12 @@
         $navbar.addClass("navbar-fixed").animate({ top: 0 });
         $body.addClass("body-top").animate({ top: 0 });
         $form.addClass("form-after").animate({ top: 0});
+        $mobile.addClass("btn-sub-mobile-js").animate({ top: 0});
       } else if (scrollTop <= y_pos){
         $navbar.removeClass("navbar-fixed").clearQueue().animate({ top: 0 });
         $body.removeClass("body-top").clearQueue().animate({ top: 0 });
         $form.removeClass("form-after").animate({ top: 0});
+        $mobile.removeClass("btn-sub-mobile-js").clearQueue().animate({ top: 0});
       }
     });
 

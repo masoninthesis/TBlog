@@ -21,6 +21,10 @@
   }
 }
 
+.btn-sub-mobile-js {
+  margin-top: -3px !important;
+}
+
 /*----------------------
   navbar
   ----------------------*/
@@ -48,7 +52,7 @@ form {
   .facebook {
     line-height: .7;
   }
-  .btn-sub {
+  .nav-tablet .btn-sub {
     background: #fff;
     border: 1px solid @gray-light-ish;
     color: @brand-primary;
@@ -85,6 +89,35 @@ nav {
   li {
     display: inline-block;
   }}
+}
+
+.nav-tablet {
+  display: none;
+  @media (min-width: @screen-sm-min) {
+    display: inline-block;
+  }
+}
+
+.nav-mobile {
+  display: inherit;
+  @media (min-width: @screen-sm-min) {
+    display: none;
+  }
+  .btn-sub-mobile {
+    float: right;
+    margin-top: 7px;
+    background: #fff;
+    border: 1px solid @gray-light-ish;
+    color: @brand-primary;
+    padding-top: 7px;
+    line-height: 1.4;
+    &:hover {
+      .transition;
+      background: @brand-primary;
+      border: 1px solid @brand-primary;
+      color: #fff;
+    }
+  }
 }
 
 

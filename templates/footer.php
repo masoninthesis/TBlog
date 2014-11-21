@@ -49,3 +49,20 @@
     </div><!--footer-->
   </div>
 </footer>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <center><svg width="30" height="33" class="logo logo-modal"><?php get_template_part( 'assets/img/svg/inline', 'logo.svg' ); ?></center>
+      <center><h3>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h3></center>
+      <div class="modal-body">
+        <center>
+          <form class="form-inline" id="before_header" action="//jackalope.us9.list-manage.com/subscribe/post?u=74a8ddb6f1ff4b3eeb5966632&amp;id=322fc5ebb8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Email address.." required>
+            <button id="header-optin-click" name="submit" onClick="ga('send', 'event', 'optin', 'subscribe', 'header optin');" class="btn btn-sub" type="submit" value="Submit" tabindex="501">Subscribe</button>
+          </form>
+        </center>
+      </div><!-- /optin -->
+    </div>
+  </div>
+</div>
