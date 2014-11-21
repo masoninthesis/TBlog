@@ -10,7 +10,41 @@
   </div>
 </section>
 
-<nav id="navbar">
+<header id="navbar" class="banner navbar navbar-static-top" role="banner">
+  <div class="nav-container">
+    <div id="nav" class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><svg width="30" height="33" class="logo"><?php get_template_part( 'assets/img/svg/inline', 'logo.svg' ); ?></svg></a>
+    </div>
+
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul id="form-before">
+        <li class="twitter">
+          <a href="https://twitter.com/timelyapp" class="twitter-follow-button" data-show-count="false">Follow @timelyapp</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </li>
+        <li class="facebook">
+          <div class="fb-like" data-href="https://www.facebook.com/TimelyApp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+        </li>
+        <li class="nav-sub">
+          <form>
+            <div>
+              <input class="form-control" type="email" placeholder="Email address ...">
+              <input class="btn btn-sub" type="submit" value="Subscribe">
+            </div>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- <nav id="navbar">
   <div class="nav-container">
     <ul id="form-before">
       <li class="twitter">
@@ -30,7 +64,7 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav> -->
 
 <script type="text/javascript">
   // Nav Bar
