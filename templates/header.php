@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12 text-center">
         <a href="http://timelyapp.com" target="_blank" class="btn btn-primary btn-sm">Home</a>
-        <h1>Be Timely.</h1>
+        <h1>Be Timely</h1>
         <h3>The product blog of timelyapp.com, the time tracking app to end time tracking. Follow for new features and updates.</h3>
       </div>
     </div>

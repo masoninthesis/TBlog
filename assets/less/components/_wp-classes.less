@@ -30,7 +30,11 @@ figure.alignnone {
 // Featured Image
 
 .attachment-featured-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  @media (min-width: @screen-sm-min) {
+    border-radius: 8px;
+  }
 }
