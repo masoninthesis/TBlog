@@ -53,13 +53,13 @@
       if (scrollTop > y_pos){
         $navbar.addClass("navbar-fixed").animate({ top: 0 });
         $body.addClass("body-top").animate({ top: 0 });
-        $form.addClass("form-after").animate({ top: 0});
-        $mobile.addClass("btn-sub-mobile-js").animate({ top: 0});
+        $form.addClass("form-after").animate({ top: 0 });
+        $mobile.addClass("btn-sub-mobile-js").animate({ top: 0 });
       } else if (scrollTop <= y_pos){
         $navbar.removeClass("navbar-fixed").clearQueue().animate({ top: 0 });
         $body.removeClass("body-top").clearQueue().animate({ top: 0 });
-        $form.removeClass("form-after").animate({ top: 0});
-        $mobile.removeClass("btn-sub-mobile-js").clearQueue().animate({ top: 0});
+        $form.removeClass("form-after").animate({ top: 0 });
+        $mobile.removeClass("btn-sub-mobile-js").clearQueue().animate({ top: 0 });
       }
     });
 

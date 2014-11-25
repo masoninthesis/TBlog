@@ -9,21 +9,24 @@
   background: rgba(200, 200, 200, .14);
   border-radius: 4px;
   display: inline-block;
-  padding: 10px 10px 7px 10px;
+  padding: 4px 4px 4px 4px;
   .email {
     width: 100%;
     border: none!important;
     border-radius: 4px;
     box-sizing: border-box;
     color: #999;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
-    height: 44px;
+    height: 34px;
     padding: 0 30px;
     top: -3px;
     .form-focus;
     @media (min-width: @screen-sm-min) {
-      width: 206px;
+      width: 340px;
+    }
+    @media (min-width: @screen-md-min) {
+      width: 420px;
     }
   }
   .btn-sub {
@@ -32,18 +35,22 @@
     color: #fff;
     border: none;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
-    height: 44px;
-    margin: 10px 0 0 0;
-    padding: 0 30px;
+    height: 34px;
+    margin: 4px 0 0 0;
+    padding: 1px 54px 0 54px;
     &:hover {
       .transition;
       background: @brand-secondary-dark;
     }
     @media (min-width: @screen-sm-min) {
       width: inherit;
-      margin: -5px 0 0 10px;
+      margin: -4px 0 0 4px;
+      padding: 1px 34px 0 34px;
+    }
+    @media (min-width: @screen-md-min) {
+      padding: 1px 54px 0 54px;
     }
   }
 }
@@ -53,7 +60,7 @@
   line-height: .8;
   padding: 18px 0 0 0;
   @media (min-width: @screen-sm-min) {
-    line-height: 1.4;
+    line-height: .6;
   }
   @media (min-width: @screen-md-min) {
     padding: 24px 0 18px 0;
@@ -61,18 +68,18 @@
 }
 
 .social .twitter {
-  margin: 0 12px 0 -42px;
+  margin: 0 12px 0 -52px;
   @media (min-width: @screen-sm-min) {
-    margin: 0 14px 0 84px;
+    margin-right: 14px;
   }
 }
 
-.fb-tablet {
+/*.fb-tablet {
   display: none !important;
   @media (min-width: @screen-sm-min) {
     display: inline-block !important;
   }
-}
+}*/
 
 .fb-phone {
   display: inline-block !important;
