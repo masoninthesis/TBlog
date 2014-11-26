@@ -24,15 +24,7 @@ $roots_includes = array(
   'lib/extras.php',          // Custom functions
 );
 
-function exclude_category($query) {
-if ( $query->is_home() ) {
-$query->set('cat', '-4');
-}
-return $query;
-}
-add_filter('pre_get_posts', 'exclude_category');
-
-
+// idk what this is?
 foreach ($roots_includes as $file) {
   if (!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'roots'), $file), E_USER_ERROR);
@@ -42,4 +34,15 @@ foreach ($roots_includes as $file) {
 }
 unset($file, $filepath);
 
-set_post_thumbnail_size( 860, 9999, true ); // 860 pixels wide by 356 pixels tall, crop mode
+// Hiding the hidden category, replace "-4" w/ slug id
+function exclude_category($query) {
+  if ( $query->is_home() ) {
+    $query->set('cat', '-4');
+  }
+  return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');
+
+// crops the featured image
+add_theme_support('post-thumbnails');
+add_image_size( 'featured-img-thumb', 860, 356, true ); // (cropped)
