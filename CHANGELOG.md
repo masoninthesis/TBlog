@@ -1,3 +1,18 @@
+### 0.0.1: November 25th, 2014
+* Removed from footer in content-single.php: (placed in comment-activate.txt)
+
+
+### 0.0.1: November 18th, 2014
+* Reading > blog posts
+* content.php - "the_content" instead of "the_excerpt"
+* page-header.php - commented out all code
+
+
+### 0.0.1: ??
+* Nudist Takeover
+* Swapped Screenshot
+* Changed Gruntfile to work on Grunt build/grunt watch
+
 ### 7.0.1: August 15th, 2014
 * Move `<main>` and `.sidebar` markup out of PHP and into LESS
 * Define `WP_ENV` if it is not already defined
