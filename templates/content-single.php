@@ -9,6 +9,14 @@
       <?php the_content(); ?>
     </div>
     <footer>
+      <ul class="social">
+        <li class="twitter">
+          <?php dd_twitter_generate('Compact','twitter_username') ?>
+        </li>
+        <li class="fb-tablet">
+          <?php dd_fblike_generate('Like Button Count') ?>
+        </li>
+      </ul>
       <!-- When you wish to add comments, copy code in comment-activate.txt -->
     </footer>
     <!-- When you wish to add comments, copy code in comment-activate.txt -->
